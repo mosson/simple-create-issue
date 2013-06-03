@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Simple Create Issue</title>
+  <style type="text/css">
+
+  .container {
+    width: 400px;
+    margin: auto;
+  }
+    dl { 
+      zoom:1; 
+      margin: 0;
+      padding: 0px;
+    }
+    dl:after{ content: ""; display: block; clear: both; }
+
+    dt, dd {
+      float: left;
+    }
+
+    dt {
+      width: 100px;
+      margin: 0;
+      padding: 0px;
+      clear: both; 
+    }
+
+    dd {
+      width: 300px;
+      margin: 0;
+      padding: 0px;
+    }
+
+    input, textarea {
+      box-sizing: border-box;
+      width: 100%;
+    }
+
+
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Simple Create Issue</h1>
+    <form action="/" method="post">
+      <dl>
+        <dt>title: </dt>
+        <dd><input type="text" name="title" placeholder"title" /></dd>
+
+        <dt>body</dt>
+        <dd><textarea name="body" placeholder="body" rows="4"></textarea></dd>
+
+        <dt>&nbsp;</dt>
+        <dd><input type="submit" value="send" /></dd>
+      </dl>
+    </form>
+  </div>
+  
+</body>
+</html>
